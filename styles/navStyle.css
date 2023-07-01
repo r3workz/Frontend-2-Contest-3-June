@@ -1,0 +1,90 @@
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #212121;
+	height: 56px;
+}
+nav *{
+	background-color: #212121;
+}
+nav input{
+	background-color: #121212;
+	color: #AAAAAA;
+	height: 40px;
+	padding-left: 16px;
+}
+#navLeft{
+	display: flex;
+	align-items: center;
+	margin-left: 16px;
+}
+.ytLogo{
+	margin-left: 24px;
+}
+
+#navMid{
+	display: flex;
+	align-items: center;
+}
+button{
+	background-color: #303030;
+	height: 40px;
+	width: 64px;
+	box-shadow:
+		7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+button:active{
+	box-shadow:
+	7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+	transform: translateY(4px);
+	/* Moving button 4px to y-axis */
+}
+
+button>img{
+	align-self: center;
+	background-color: transparent;
+}
+
+
+#navRight{
+	display: flex;
+	align-items: center;
+}
+
+#navRight .icon{
+	margin-right: 16px;
+}
+
+
+/*ASIDE*/
+
+aside{
+	background-color: #212121;
+	width: 25%;
+	position: absolute;
+	align-items: start;
+}
+
+.toggleAside {
+	cursor: pointer;
+}
+
+.sideLinks{
+	text-decoration: none;
+	padding: 8px 0 8px 8px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	height: 24px;
+	/*width: 100%;*/
+	font-size: 14px;
+}
+.sideLinks img{
+	padding: 8px;
+}
+.sideLinks:hover{
+	background-color: #303030;
+}
