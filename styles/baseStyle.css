@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+:root {
+    /* Variables */
+    --bgColor: black;
+    --textColor: white;
+    --lighterBG: #303030;
+
+    /* Root styles */
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    font-size: 1rem;
+    overflow: hidden;
+}
+button {
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:active * {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.8);
+}
+button:hover {
+    transform: scale(1.1);
+}
+button > img {
+    align-self: center;
+    background-color: transparent;
+}
+a {
+    color: #aaa;
+}
+a:hover {
+    color: #fff;
+}
+
+.video-item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    gap: 0.25rem;
+}
+.vi-image {
+    width: 360px;
+    height: 180px;
+    border-radius: 2%;
+}
+.vi-title {
+    max-height: 2.5rem;
+    overflow: hidden;
+}
+.vi-title > p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    max-lines: 2;
+    overflow: hidden;
+    /* text-wrap: break-word; */
+    /* word-wrap: none; */
+}
+
+.vi-channel,
+.vi-views-uploaded {
+    color: #aaa;
+    font-family: Roboto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.vi-channel {
+    font-weight: 700;
+}
+
+.filter-item {
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    max-height: 1.5rem;
+    /* max-width: 5rem; */
+    border-radius: 2rem;
+    border: 0.3px solid #aaa;
+    background-color: #303030;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.filter-item p {
+    white-space: nowrap;
+    font-size: 1rem;
+    height: 100%;
+}
+.active-filter {
+    background-color: #fff;
+    color: #303030;
+    font-weight: 500;
+}
+
+#scroll-right {
+    width: 3rem;
+    position: fixed;
+    right: 0;
+}
+
+.hiddenElement {
+    display: none;
+}
